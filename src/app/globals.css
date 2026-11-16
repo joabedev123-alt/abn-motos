@@ -28,6 +28,8 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  overflow-x: clip;
 }
 
 body {
@@ -35,6 +37,19 @@ body {
   color: var(--ink);
   font-family: var(--font-sans);
   overflow-x: clip;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+input,
+select,
+textarea {
+  font-size: 16px;
+}
+
+a,
+button {
+  touch-action: manipulation;
 }
 
 h1,

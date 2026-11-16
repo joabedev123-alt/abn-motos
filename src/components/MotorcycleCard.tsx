@@ -8,6 +8,43 @@ type MotorcycleCardProps = {
   moto: Motorcycle;
 };
 
+type FeaturedMotorcycleProps = MotorcycleCardProps & {
+  titleAs?: "h2" | "h3";
+};
+
+export function FeaturedMotorcycle({ moto, titleAs = "h3" }: FeaturedMotorcycleProps) {
+  const Title = titleAs;
+  const cover = moto.imagens[0];
+
+  return (
+    <article className="grid overflow-hidden rounded-[28px] border border-line bg-paper shadow-[0_12px_32px_rgba(17,17,17,0.04)] nav:grid-cols-2">
+      <div className="relative aspect-[4/3] bg-[#efefe8] nav:aspect-auto nav:min-h-[440px]">
+        <Image
+          src={cover.src}
+          alt={cover.alt}
+          fill
+          sizes="(max-width: 1120px) 100vw, 620px"
+          className="object-contain p-4 sm:p-8"
+        />
+      </div>
+      <div className="flex flex-col justify-center p-6 md:p-10">
+        <Title className="font-display text-4xl font-semibold leading-none text-ink md:text-5xl">{moto.nome}</Title>
+        <p className="mt-4 text-base leading-relaxed text-muted">{moto.descricao}</p>
+        <p className="mt-5 text-sm font-semibold text-ink">Consulte disponibilidade</p>
+        <p className="mt-1 text-sm text-muted">{priceLabel(moto)}</p>
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+          <Button href={`/motos/${moto.slug}`} variant="secondary" icon="arrow-right">
+            Ver detalhes
+          </Button>
+          <Button href={whatsappVehicleUrl(moto.nome)} external icon="whatsapp">
+            Consultar esta moto
+          </Button>
+        </div>
+      </div>
+    </article>
+  );
+}
+
 export function MotorcycleCard({ moto }: MotorcycleCardProps) {
   const cover = moto.imagens[0];
 

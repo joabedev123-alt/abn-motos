@@ -28,10 +28,7 @@ export function MotorcycleGallery({ images, name }: MotorcycleGalleryProps) {
       </div>
       {images.length > 1 ? (
         <ul
-          className={cx(
-            "mt-3 grid gap-3",
-            images.length >= 4 ? "grid-cols-4" : images.length === 3 ? "grid-cols-3" : "grid-cols-2",
-          )}
+          className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4"
         >
           {images.map((image, index) => {
             const selected = index === active;
@@ -40,7 +37,7 @@ export function MotorcycleGallery({ images, name }: MotorcycleGalleryProps) {
                 <button
                   type="button"
                   className={cx(
-                    "relative aspect-[4/3] w-full overflow-hidden rounded-2xl border bg-[#efefe8]",
+                    "relative aspect-[4/3] min-h-16 w-full overflow-hidden rounded-2xl border bg-[#efefe8]",
                     selected ? "border-ink" : "border-line",
                   )}
                   aria-label={`Mostrar foto ${index + 1} de ${name}`}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
 import { Icon } from "@/components/Icon";
@@ -7,10 +8,9 @@ import { company } from "@/data/company";
 import { contacts } from "@/data/contacts";
 import { footerInfo, footerNav } from "@/data/navigation";
 import { whatsappGeneralUrl } from "@/lib/whatsapp";
+import { Copyright } from "@/components/Copyright";
 
 export function Footer() {
-  const year = new Date().getFullYear();
-
   return (
     <footer id="rodape" className="bg-graphite text-white">
       <Container className="grid gap-12 py-14 md:grid-cols-2 md:py-16 xl:grid-cols-4">
@@ -74,8 +74,18 @@ export function Footer() {
         </div>
       </Container>
       <div className="border-t border-white/10">
-        <Container className="py-5 pr-20">
-          <p className="text-sm text-white/60">© {year} ABN MOTOS. Todos os direitos reservados.</p>
+        <Container className="flex flex-col gap-2 py-5 pr-20 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
+          <Suspense fallback={<p className="text-sm text-white/60">© ABN MOTOS. Todos os direitos reservados.</p>}>
+            <Copyright />
+          </Suspense>
+          <a
+            href="https://camaly.com.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-11 w-fit items-center text-sm text-white/60 hover:text-white"
+          >
+            Produzida com 💚 por CAMALY
+          </a>
         </Container>
       </div>
     </footer>

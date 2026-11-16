@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
 import { CtaBand } from "@/components/CtaBand";
 import { Icon } from "@/components/Icon";
-import { MotorcycleCard } from "@/components/MotorcycleCard";
+import { FeaturedMotorcycle, MotorcycleCard } from "@/components/MotorcycleCard";
 import { company } from "@/data/company";
 import { homeFaq } from "@/data/faq";
 import { getFeaturedMotorcycle, motorcycles } from "@/data/motorcycles";
@@ -48,6 +48,7 @@ const heroNotes = [
 export default function HomePage() {
   const destaque = getFeaturedMotorcycle();
   const heroImage = destaque.imagens[0];
+  const demais = motorcycles.filter((moto) => moto.id !== destaque.id);
 
   return (
     <>
@@ -56,7 +57,7 @@ export default function HomePage() {
         <Container className="relative grid items-center gap-10 py-14 md:py-20 nav:grid-cols-[1.05fr_0.95fr] nav:py-24">
           <div className="rise">
             <p className="eyebrow">Aluguel de motos • Betim e região</p>
-            <h1 className="mt-5 max-w-xl text-balance font-display text-[2.65rem] font-semibold leading-[0.95] sm:text-6xl nav:text-[4.4rem]">
+            <h1 className="mt-5 max-w-xl text-balance font-display text-[2.05rem] font-semibold leading-[0.95] min-[390px]:text-[2.35rem] sm:text-6xl nav:text-[4.4rem]">
               Sua próxima moto para alugar está aqui.
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
@@ -131,8 +132,11 @@ export default function HomePage() {
               Ver a página de motos
             </Link>
           </div>
-          <ul className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {motorcycles.map((moto) => (
+          <div className="mt-10">
+            <FeaturedMotorcycle moto={destaque} />
+          </div>
+          <ul className="mt-6 grid gap-6 md:grid-cols-2">
+            {demais.map((moto) => (
               <li key={moto.id}>
                 <MotorcycleCard moto={moto} />
               </li>

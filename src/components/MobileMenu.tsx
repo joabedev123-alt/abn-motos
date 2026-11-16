@@ -45,7 +45,7 @@ export function MobileMenu({ open, pathname, onClose }: MobileMenuProps) {
               key={item.href}
               href={item.href}
               aria-current={active ? "page" : undefined}
-              onClick={onClose}
+              onClick={active ? onClose : undefined}
               className={cx(
                 "flex min-h-12 items-center border-b border-line text-lg",
                 active ? "font-semibold text-ink" : "text-muted",
@@ -58,13 +58,19 @@ export function MobileMenu({ open, pathname, onClose }: MobileMenuProps) {
         })}
         <Link
           href="/duvidas-frequentes"
-          onClick={onClose}
+          onClick={pathname === "/duvidas-frequentes" ? onClose : undefined}
           className="flex min-h-12 items-center border-b border-line text-lg text-muted"
         >
           Dúvidas frequentes
         </Link>
         <div className="pt-5">
-          <Button href={whatsappGeneralUrl} external icon="whatsapp" className="w-full" onClick={onClose}>
+          <Button
+            href={whatsappGeneralUrl}
+            external
+            icon="whatsapp"
+            className="w-full"
+            onClick={() => window.setTimeout(onClose, 0)}
+          >
             Consultar disponibilidade
           </Button>
         </div>

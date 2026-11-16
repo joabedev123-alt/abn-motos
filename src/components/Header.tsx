@@ -19,17 +19,14 @@ function isActive(pathname: string, href: string) {
 
 export function Header() {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
+  const [openPath, setOpenPath] = useState<string | null>(null);
+  const open = openPath === pathname;
   const buttonRef = useRef<HTMLButtonElement>(null);
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
 
   useEffect(() => {
     const media = window.matchMedia("(min-width: 1120px)");
     const onChange = () => {
-      if (media.matches) setOpen(false);
+      if (media.matches) setOpenPath(null);
     };
     media.addEventListener("change", onChange);
     return () => media.removeEventListener("change", onChange);
@@ -56,7 +53,7 @@ export function Header() {
 
     function onKey(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        setOpen(false);
+        setOpenPath(null);
         buttonRef.current?.focus();
         return;
       }
@@ -139,13 +136,13 @@ export function Header() {
           className="ml-auto inline-flex h-12 w-12 items-center justify-center rounded-full border border-line text-ink nav:hidden"
           aria-expanded={open}
           aria-controls="menu-mobile"
-          onClick={() => setOpen((value) => !value)}
+          onClick={() => setOpenPath(open ? null : pathname)}
         >
           <Icon name={open ? "x-lg" : "list"} className="text-xl" />
           <span className="sr-only">{open ? "Fechar menu" : "Abrir menu"}</span>
         </button>
       </Container>
-      <MobileMenu open={open} pathname={pathname} onClose={() => setOpen(false)} />
+      <MobileMenu open={open} pathname={pathname} onClose={() => setOpenPath(null)} />
     </header>
   );
 }
