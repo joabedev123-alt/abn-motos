@@ -44,9 +44,9 @@ export default function HowToRentPage() {
         ]}
       />
 
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-20">
         <Container>
-          <h2 className="max-w-2xl font-display text-4xl font-semibold leading-[0.98] md:text-5xl">O caminho da consulta</h2>
+          <h2 className="max-w-2xl font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">O caminho da consulta</h2>
           <ol className="mt-10 grid gap-4">
             {rentalSteps.map((step) => (
               <li key={step.id} className="grid gap-4 rounded-3xl border border-line bg-paper p-6 md:grid-cols-[auto_1fr] md:items-center">
@@ -63,9 +63,9 @@ export default function HowToRentPage() {
         </Container>
       </section>
 
-      <section className="bg-paper py-16 md:py-24">
+      <section className="bg-paper py-12 md:py-20">
         <Container>
-          <h2 className="max-w-2xl font-display text-4xl font-semibold leading-[0.98] md:text-5xl">O que enviar para a equipe</h2>
+          <h2 className="max-w-2xl font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">O que enviar para a equipe</h2>
           <ul className="mt-10 grid gap-4 md:grid-cols-3">
             {prepare.map((item) => (
               <li key={item.title} className="rounded-3xl border border-line bg-canvas p-6">
@@ -78,9 +78,9 @@ export default function HowToRentPage() {
         </Container>
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-20">
         <Container className="max-w-3xl">
-          <h2 className="font-display text-4xl font-semibold leading-[0.98] md:text-5xl">O que a equipe esclarece</h2>
+          <h2 className="font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">O que a equipe esclarece</h2>
           <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
             Documentação, requisitos e condições da locação são explicados no atendimento. Este site não publica idade mínima, categoria de habilitação, caução ou prazo mínimo, porque essas regras ainda não foram informadas para publicação.
           </p>

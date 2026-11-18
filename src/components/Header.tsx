@@ -91,7 +91,7 @@ export function Header() {
   }, [open]);
 
   return (
-    <header id="site-header" className="sticky top-0 z-50 border-b border-line bg-paper">
+    <header id="site-header" className="sticky top-0 z-50 border-b border-line bg-paper pt-[env(safe-area-inset-top)]">
       <Container className="flex h-[72px] items-center gap-6 nav:h-[88px]">
         <Link href="/" className="shrink-0" aria-label="ABN MOTOS, ir para o início">
           <Image

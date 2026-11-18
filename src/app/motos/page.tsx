@@ -29,7 +29,7 @@ export default function MotorcyclesPage() {
         ]}
       />
 
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-20">
         <Container>
           <p className="max-w-3xl text-base leading-relaxed text-muted md:text-lg">
             Os nomes identificam as motos pelas fotos recebidas. Modelo, ano e outras características permanecem com a equipe até serem confirmados para publicação.

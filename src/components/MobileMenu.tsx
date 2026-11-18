@@ -35,7 +35,12 @@ export function MobileMenu({ open, pathname, onClose }: MobileMenuProps) {
       aria-modal="true"
       aria-label="Menu"
       hidden={!open}
-      className={cx("nav:hidden", open ? "fixed inset-x-0 bottom-0 top-[72px] z-50 overflow-y-auto bg-paper" : undefined)}
+      className={cx(
+        "nav:hidden",
+        open
+          ? "fixed inset-x-0 bottom-0 top-[calc(72px+env(safe-area-inset-top))] z-50 overflow-y-auto overscroll-contain bg-paper pb-[max(1.25rem,env(safe-area-inset-bottom))]"
+          : undefined,
+      )}
     >
       <nav className="flex flex-col px-5 py-4" aria-label="Mobile">
         {mainNav.map((item) => {

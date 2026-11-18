@@ -67,7 +67,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} noValidate className="rounded-3xl border border-line bg-paper p-5 shadow-[0_12px_32px_rgba(17,17,17,0.04)] md:p-7">
+    <form onSubmit={onSubmit} noValidate className="rounded-3xl border border-line bg-paper p-4 shadow-[0_12px_32px_rgba(17,17,17,0.04)] sm:p-5 md:p-7">
       <h2 className="font-display text-3xl font-semibold leading-none">Prepare sua mensagem</h2>
       <p className="mt-3 text-sm leading-relaxed text-muted">
         Os campos montam o texto no seu navegador. Nada é enviado por este site.

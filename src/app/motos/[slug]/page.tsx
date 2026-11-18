@@ -53,7 +53,7 @@ export default async function MotorcyclePage({ params }: PageProps) {
             <MotorcycleGallery images={moto.imagens} name={moto.nome} />
             <div>
               <p className="eyebrow">Consulta de locação</p>
-              <h1 className="mt-4 font-display text-4xl font-semibold leading-[0.96] md:text-6xl">{moto.nome}</h1>
+              <h1 className="mt-4 font-display text-[2rem] font-semibold leading-[1.02] sm:text-4xl md:text-6xl">{moto.nome}</h1>
               <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">{moto.descricao}</p>
 
               <dl className="mt-6 grid gap-4 rounded-3xl border border-line bg-paper p-5">
@@ -73,7 +73,7 @@ export default async function MotorcyclePage({ params }: PageProps) {
                 ))}
               </dl>
 
-              <p className="mt-5 text-sm leading-relaxed text-muted">
+              <p className="mt-5 text-base leading-relaxed text-muted">
                 A disponibilidade desta moto depende de confirmação com a equipe. O contato pelo site não reserva o veículo.
               </p>
 
@@ -94,12 +94,12 @@ export default async function MotorcyclePage({ params }: PageProps) {
         <Container>
           <div className="rounded-[28px] border border-line bg-paper p-6 md:p-8">
             <h2 className="font-display text-3xl font-semibold">O que informar nesta consulta</h2>
-            <ul className="mt-4 grid gap-3 text-sm leading-relaxed text-muted md:grid-cols-3">
+            <ul className="mt-4 grid gap-3 text-base leading-relaxed text-muted md:grid-cols-3">
               <li className="rounded-2xl bg-canvas p-4">A moto: {moto.nome}.</li>
               <li className="rounded-2xl bg-canvas p-4">O período em que você precisa dela.</li>
               <li className="rounded-2xl bg-canvas p-4">A cidade ou o bairro em Betim e região.</li>
             </ul>
-            <p className="mt-4 text-sm leading-relaxed text-muted">
+            <p className="mt-4 text-base leading-relaxed text-muted">
               Requisitos e condições da locação são explicados pela equipe. Esta página não lista documentos nem regras que ainda não foram informadas.
             </p>
             <Link href="/como-alugar" className="mt-4 inline-flex min-h-12 items-center text-sm font-semibold underline-offset-4 hover:underline">

@@ -27,18 +27,18 @@ export default function RegionPage() {
         ]}
       />
 
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-20">
         <Container className="grid gap-4 md:grid-cols-2">
           <article className="rounded-[28px] bg-graphite p-8 text-white">
             <Icon name="geo-alt" className="text-2xl text-yellow" />
-            <h2 className="mt-5 font-display text-4xl font-semibold">Betim</h2>
+            <h2 className="mt-5 font-display text-[1.85rem] font-semibold leading-none sm:text-4xl">Betim</h2>
             <p className="mt-4 text-base leading-relaxed text-white/75">
               Betim, em {company.state}, é a referência de atendimento da ABN MOTOS. Se você está na cidade, informe o bairro ao chamar a equipe.
             </p>
           </article>
           <article className="rounded-[28px] border border-line bg-paper p-8">
             <Icon name="signpost-2" className="text-2xl" />
-            <h2 className="mt-5 font-display text-4xl font-semibold">Cidades próximas</h2>
+            <h2 className="mt-5 font-display text-[1.85rem] font-semibold leading-none sm:text-4xl">Cidades próximas</h2>
             <p className="mt-4 text-base leading-relaxed text-muted">
               Localidades da região podem ser atendidas, mas o site não lista outras cidades. Envie o nome da cidade ou do bairro para a equipe confirmar.
             </p>
@@ -46,10 +46,10 @@ export default function RegionPage() {
         </Container>
       </section>
 
-      <section className="bg-paper py-16 md:py-24">
+      <section className="bg-paper py-12 md:py-20">
         <Container className="grid gap-8 nav:grid-cols-[1.1fr_0.9fr] nav:items-center">
           <div>
-            <h2 className="font-display text-4xl font-semibold leading-[0.98] md:text-5xl">Como confirmar a sua localidade</h2>
+            <h2 className="font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">Como confirmar a sua localidade</h2>
             <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
               Na mensagem, diga a cidade e, se puder, o bairro. A ABN MOTOS responde se consegue atender aquele ponto para o período da locação.
             </p>

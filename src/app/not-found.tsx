@@ -13,7 +13,7 @@ export default function NotFound() {
     <section className="py-20 md:py-28">
       <Container className="max-w-2xl">
         <p className="eyebrow">404</p>
-        <h1 className="mt-4 font-display text-5xl font-semibold leading-none">Página não encontrada</h1>
+        <h1 className="mt-4 font-display text-[2rem] font-semibold leading-[1.02] sm:text-5xl">Página não encontrada</h1>
         <p className="mt-4 text-base leading-relaxed text-muted">
           O endereço não corresponde a uma página da ABN MOTOS. Volte ao início ou veja as motos cadastradas.
         </p>

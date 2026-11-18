@@ -26,7 +26,7 @@ export default function FaqPage() {
         ]}
       />
 
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-20">
         <Container className="max-w-3xl">
           <h2 className="font-display text-3xl font-semibold md:text-4xl">Perguntas</h2>
           <div className="mt-6">

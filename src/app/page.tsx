@@ -54,7 +54,7 @@ export default function HomePage() {
     <>
       <section className="relative overflow-hidden bg-graphite text-white">
         <div className="road-lines pointer-events-none absolute inset-0" aria-hidden="true" />
-        <Container className="relative grid items-center gap-10 py-14 md:py-20 nav:grid-cols-[1.05fr_0.95fr] nav:py-24">
+        <Container className="relative grid items-center gap-8 py-10 sm:gap-10 sm:py-14 md:py-20 nav:grid-cols-[1.05fr_0.95fr] nav:py-24">
           <div className="rise">
             <p className="eyebrow">Aluguel de motos • Betim e região</p>
             <h1 className="mt-5 max-w-xl text-balance font-display text-[2.05rem] font-semibold leading-[0.95] min-[390px]:text-[2.35rem] sm:text-6xl nav:text-[4.4rem]">
@@ -73,7 +73,7 @@ export default function HomePage() {
             </div>
             <ul className="mt-8 grid gap-3 sm:grid-cols-3">
               {heroNotes.map((note) => (
-                <li key={note.label} className="flex items-center gap-2 text-sm text-white/80">
+                <li key={note.label} className="flex min-h-11 items-center gap-2 text-base text-white/80">
                   <Icon name={note.icon} className="text-yellow" />
                   <span>{note.label}</span>
                 </li>
@@ -81,7 +81,7 @@ export default function HomePage() {
             </ul>
           </div>
           <div className="relative mx-auto w-full max-w-[460px]">
-            <div className="relative aspect-[3/4] overflow-hidden rounded-[28px] bg-[#1b1b1b] ring-1 ring-white/10">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] bg-[#1b1b1b] ring-1 ring-white/10 sm:aspect-[3/4]">
               <Image
                 src={heroImage.src}
                 alt={heroImage.alt}
@@ -95,10 +95,10 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="py-16 md:py-24 lg:py-28">
+      <section className="py-12 md:py-20 lg:py-28">
         <Container>
           <div className="max-w-3xl">
-            <h2 className="text-balance font-display text-4xl font-semibold leading-[0.98] md:text-5xl">
+            <h2 className="text-balance font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">
               Aluguel de motos com contato direto.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
@@ -112,18 +112,18 @@ export default function HomePage() {
                   <Icon name={block.icon} className="text-xl" />
                 </span>
                 <h3 className="mt-5 font-display text-2xl font-semibold">{block.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{block.text}</p>
+                <p className="mt-2 text-base leading-relaxed text-muted">{block.text}</p>
               </li>
             ))}
           </ul>
         </Container>
       </section>
 
-      <section className="bg-paper py-16 md:py-24 lg:py-28">
+      <section className="bg-paper py-12 md:py-20 lg:py-28">
         <Container>
           <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div className="max-w-2xl">
-              <h2 className="font-display text-4xl font-semibold leading-[0.98] md:text-5xl">Conheça nossas motos.</h2>
+              <h2 className="font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">Conheça nossas motos.</h2>
               <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
                 Veja as opções cadastradas e fale com a ABN para confirmar valores e disponibilidade.
               </p>
@@ -145,10 +145,10 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="py-16 md:py-24 lg:py-28">
+      <section className="py-12 md:py-20 lg:py-28">
         <Container>
           <div className="max-w-3xl">
-            <h2 className="text-balance font-display text-4xl font-semibold leading-[0.98] md:text-5xl">
+            <h2 className="text-balance font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">
               Seu primeiro passo começa com uma conversa.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
@@ -160,7 +160,7 @@ export default function HomePage() {
               <li key={step.id} className="rounded-3xl border border-line bg-paper p-6">
                 <span className="font-display text-3xl font-semibold text-yellow-deep">{step.numero}</span>
                 <h3 className="mt-4 font-display text-2xl font-semibold leading-tight">{step.titulo}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{step.texto}</p>
+                <p className="mt-2 text-base leading-relaxed text-muted">{step.texto}</p>
               </li>
             ))}
           </ol>
@@ -170,10 +170,10 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="bg-graphite py-16 text-white md:py-24 lg:py-28">
+      <section className="bg-graphite py-12 text-white md:py-20 lg:py-28">
         <Container className="grid items-center gap-10 nav:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <h2 className="text-balance font-display text-4xl font-semibold leading-[0.98] md:text-5xl">
+            <h2 className="text-balance font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">
               Aluguel de motos em Betim e região.
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
@@ -183,10 +183,10 @@ export default function HomePage() {
               Consultar minha região
             </Button>
           </div>
-          <div className="rounded-[28px] border border-white/10 bg-white/5 p-8">
-            <p className="font-display text-5xl font-semibold leading-none">Betim</p>
+          <div className="rounded-[28px] border border-white/10 bg-white/5 p-5 sm:p-8">
+            <p className="font-display text-4xl font-semibold leading-none sm:text-5xl">Betim</p>
             <p className="mt-3 text-lg text-white/80">e região — {company.state}</p>
-            <p className="mt-6 text-sm leading-relaxed text-white/65">
+            <p className="mt-6 text-base leading-relaxed text-white/65">
               Outras localidades próximas são confirmadas na conversa. O site não publica endereço nem ponto de retirada.
             </p>
             <Link href="/regiao-de-atendimento" className="mt-6 inline-flex min-h-12 items-center text-sm font-semibold text-yellow">
@@ -196,9 +196,9 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="py-16 md:py-24 lg:py-28">
+      <section className="py-12 md:py-20 lg:py-28">
         <Container className="grid items-center gap-10 nav:grid-cols-2">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] border border-line bg-[#efefe8]">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] border border-line bg-[#efefe8] sm:aspect-[4/5]">
             <Image
               src="/images/motos/azul-1.jpg"
               alt="Motocicleta azul e preta da ABN MOTOS vista de lado ao sol"
@@ -208,7 +208,7 @@ export default function HomePage() {
             />
           </div>
           <div>
-            <h2 className="font-display text-4xl font-semibold leading-[0.98] md:text-5xl">Conheça a ABN MOTOS.</h2>
+            <h2 className="font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">Conheça a ABN MOTOS.</h2>
             <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
               A ABN MOTOS trabalha com aluguel de motocicletas para quem está em Betim e região. O site apresenta as motos cadastradas e encaminha a consulta de valores, disponibilidade e condições para a equipe.
             </p>
@@ -222,10 +222,10 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="bg-paper py-16 md:py-24 lg:py-28">
+      <section className="bg-paper py-12 md:py-20 lg:py-28">
         <Container className="grid gap-8 nav:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <h2 className="font-display text-4xl font-semibold leading-[0.98] md:text-5xl">Perguntas frequentes</h2>
+            <h2 className="font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">Perguntas frequentes</h2>
             <p className="mt-4 text-base leading-relaxed text-muted">
               Respostas com o que já está definido. O que ainda depende da equipe é indicado na própria resposta.
             </p>

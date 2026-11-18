@@ -13,10 +13,10 @@ import { Copyright } from "@/components/Copyright";
 export function Footer() {
   return (
     <footer id="rodape" className="bg-graphite text-white">
-      <Container className="grid gap-12 py-14 md:grid-cols-2 md:py-16 xl:grid-cols-4">
+      <Container className="grid gap-8 py-12 md:grid-cols-2 md:gap-12 md:py-16 xl:grid-cols-4">
         <div>
           <Image src="/images/logo.png" alt="ABN Motos" width={720} height={784} className="h-16 w-auto" />
-          <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/70">{company.summary}</p>
+          <p className="mt-5 max-w-xs text-base leading-relaxed text-white/70">{company.summary}</p>
           <a
             href={company.instagram}
             target="_blank"

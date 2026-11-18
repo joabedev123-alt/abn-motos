@@ -28,7 +28,7 @@ export function Breadcrumbs({ items, tone = "light" }: BreadcrumbsProps) {
                 <Link
                   href={item.href}
                   className={cx(
-                    "underline-offset-4 hover:underline",
+                    "inline-flex min-h-11 items-center underline-offset-4 hover:underline",
                     tone === "dark" ? "text-white/75 hover:text-white" : "text-muted hover:text-ink",
                   )}
                 >

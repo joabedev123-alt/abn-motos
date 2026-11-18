@@ -47,10 +47,10 @@ export default function AboutPage() {
         ]}
       />
 
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-20">
         <Container className="grid items-center gap-10 nav:grid-cols-2">
           <div>
-            <h2 className="font-display text-4xl font-semibold leading-[0.98] md:text-5xl">O que a ABN MOTOS faz</h2>
+            <h2 className="font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">O que a ABN MOTOS faz</h2>
             <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
               A empresa atua no aluguel de motocicletas. Este site existe para mostrar as motos cadastradas, explicar como pedir uma consulta e indicar a região de atendimento.
             </p>
@@ -73,9 +73,9 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="bg-paper py-16 md:py-24">
+      <section className="bg-paper py-12 md:py-20">
         <Container>
-          <h2 className="max-w-2xl font-display text-4xl font-semibold leading-[0.98] md:text-5xl">
+          <h2 className="max-w-2xl font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">
             Serviço, região e conversa
           </h2>
           <ul className="mt-10 grid gap-4 md:grid-cols-3">
@@ -92,7 +92,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-20">
         <Container className="grid gap-8 rounded-[28px] border border-line bg-paper p-6 md:grid-cols-2 md:p-10">
           <div>
             <h2 className="font-display text-3xl font-semibold md:text-4xl">Como entrar em contato</h2>

@@ -23,7 +23,7 @@ export default function PrivacyPage() {
         ]}
       />
 
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-20">
         <Container className="max-w-3xl">
           <div className="grid gap-10">
             {privacySections.map((section) => (
