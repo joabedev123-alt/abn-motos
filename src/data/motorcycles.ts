@@ -175,6 +175,106 @@ export const motorcycles: Motorcycle[] = [
       },
     ],
   },
+  {
+    id: "moto-preta-3",
+    slug: "motocicleta-preta-3",
+    nome: "Motocicleta preta 3",
+    destaque: false,
+    preco: null,
+    unidadePreco: null,
+    especificacoes: [{ rotulo: "Cor", valor: "Preta, com detalhes prata e vermelho" }],
+    descricao:
+      "Motocicleta preta com detalhes prata e vermelho, fotografada em ambiente coberto. As imagens mostram o mesmo veículo em ângulos diferentes. Valor, período e disponibilidade são confirmados com a equipe da ABN MOTOS.",
+    imagens: [
+      {
+        src: "/images/motos/preta-3-1.jpg",
+        alt: "Motocicleta preta com detalhes prata e vermelho da ABN MOTOS vista de lado",
+        width: 960,
+        height: 1280,
+      },
+      {
+        src: "/images/motos/preta-3-2.jpg",
+        alt: "Motocicleta preta com detalhes prata e vermelho da ABN MOTOS em outro ângulo",
+        width: 960,
+        height: 1280,
+      },
+      {
+        src: "/images/motos/preta-3-3.jpg",
+        alt: "Motocicleta preta com detalhes prata e vermelho da ABN MOTOS vista de frente",
+        width: 960,
+        height: 1280,
+      },
+    ],
+  },
+  {
+    id: "moto-preta-4",
+    slug: "motocicleta-preta-4",
+    nome: "Motocicleta preta 4",
+    destaque: false,
+    preco: null,
+    unidadePreco: null,
+    especificacoes: [{ rotulo: "Cor", valor: "Preta" }],
+    descricao:
+      "Motocicleta preta fotografada em ambiente interno, distinta das outras motos pretas do cadastro. As imagens mostram este veículo. Valor, período e disponibilidade são confirmados com a equipe da ABN MOTOS.",
+    imagens: [
+      {
+        src: "/images/motos/preta-4-1.jpg",
+        alt: "Motocicleta preta da ABN MOTOS vista de frente em ambiente interno",
+        width: 1138,
+        height: 1280,
+      },
+      {
+        src: "/images/motos/preta-4-2.jpg",
+        alt: "Motocicleta preta da ABN MOTOS em ambiente interno, em ângulo próximo",
+        width: 1139,
+        height: 1280,
+      },
+    ],
+  },
+  {
+    id: "moto-preta-5",
+    slug: "motocicleta-preta-5",
+    nome: "Motocicleta preta 5",
+    destaque: false,
+    preco: null,
+    unidadePreco: null,
+    especificacoes: [{ rotulo: "Cor", valor: "Preta" }],
+    descricao:
+      "Motocicleta preta com uma fotografia cadastrada, distinta das demais motos pretas. Peça à equipe os valores e a disponibilidade para o período desejado.",
+    imagens: [
+      {
+        src: "/images/motos/preta-5-1.jpg",
+        alt: "Motocicleta preta da ABN MOTOS vista de lado junto a uma parede",
+        width: 960,
+        height: 1280,
+      },
+    ],
+  },
+  {
+    id: "moto-azul-2",
+    slug: "motocicleta-azul-2",
+    nome: "Motocicleta azul 2",
+    destaque: false,
+    preco: null,
+    unidadePreco: null,
+    especificacoes: [{ rotulo: "Cor", valor: "Azul e preta" }],
+    descricao:
+      "Outra motocicleta com tanque azul e partes pretas, distinta da Motocicleta azul. As fotos correspondem a este veículo. Condições de locação, valor e disponibilidade ficam sob consulta.",
+    imagens: [
+      {
+        src: "/images/motos/azul-2-1.jpg",
+        alt: "Segunda motocicleta azul da ABN MOTOS vista de lado em ambiente coberto",
+        width: 960,
+        height: 1280,
+      },
+      {
+        src: "/images/motos/azul-2-2.jpg",
+        alt: "Segunda motocicleta azul da ABN MOTOS vista de frente",
+        width: 960,
+        height: 1280,
+      },
+    ],
+  },
 ];
 
 export function getMotorcycle(slug: string): Motorcycle | undefined {
