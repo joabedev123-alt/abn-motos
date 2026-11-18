@@ -3,5 +3,5 @@ export const contacts = {
   whatsappE164: "+5531971489658",
   whatsappNumber: "5531971489658",
   whatsappBase: "https://wa.me/5531971489658",
-  instagram: "https://www.instagram.com/abn.services90",
+  instagram: "https://www.instagram.com/abn_motos",
 } as const;

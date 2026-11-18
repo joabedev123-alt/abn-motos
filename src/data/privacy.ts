@@ -26,7 +26,7 @@ export const privacySections = [
     titulo: "Serviços externos",
     paragrafos: [
       "WhatsApp e Instagram são serviços externos. Quando você abre esses links, o atendimento passa a acontecer nesses aplicativos, conforme as condições de cada um deles.",
-      "O Instagram da empresa é instagram.com/abn.services90. O WhatsApp usado no site é o número (31) 97148-9658.",
+      "O Instagram da empresa é instagram.com/abn_motos. O WhatsApp usado no site é o número (31) 97148-9658.",
     ],
   },
   {

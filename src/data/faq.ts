@@ -75,7 +75,7 @@ export const faqItems: FaqItem[] = [
     id: "canais",
     pergunta: "Como falar com a ABN MOTOS?",
     resposta:
-      "O atendimento do site é pelo WhatsApp (31) 97148-9658. O Instagram @abn.services90 também está disponível para acompanhar a empresa.",
+      "O atendimento do site é pelo WhatsApp (31) 97148-9658. O Instagram @abn_motos também está disponível para acompanhar a empresa.",
   },
 ];
 
