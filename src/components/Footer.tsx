@@ -74,7 +74,7 @@ export function Footer() {
         </div>
       </Container>
       <div className="border-t border-white/10">
-        <Container className="flex flex-col gap-2 py-5 pr-20 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
+        <Container className="flex flex-col gap-2 py-5 pr-24 pb-[max(1.25rem,env(safe-area-inset-bottom))] sm:pr-5 md:pr-8">
           <Suspense fallback={<p className="text-sm text-white/60">© ABN MOTOS. Todos os direitos reservados.</p>}>
             <Copyright />
           </Suspense>

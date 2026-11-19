@@ -18,7 +18,7 @@ export const faqItems: FaqItem[] = [
     home: true,
     pergunta: "Como saber o valor da locação?",
     resposta:
-      "Quando um valor estiver cadastrado, ele aparece na página da moto. Se a página indicar “Valor sob consulta”, o preço e as condições são informados pela equipe no WhatsApp.",
+      "O valor da locação está informado logo abaixo das fotos de cada motocicleta, na respectiva página. Caso apareça a indicação \"Valor sob consulta\", entre em contato com nossa equipe pelo WhatsApp para conhecer o preço e as condições de locação.",
   },
   {
     id: "regiao",
@@ -51,7 +51,7 @@ export const faqItems: FaqItem[] = [
     id: "documentos",
     pergunta: "Quais documentos ou requisitos são necessários?",
     resposta:
-      "Os requisitos da locação são esclarecidos pela equipe no atendimento. Este site não publica uma lista de documentos, idade, categoria de habilitação ou caução.",
+      "Para realizar a locação, é obrigatório possuir CNH válida na categoria A, habilitação necessária para conduzir motocicletas. Os demais documentos e requisitos são informados pela nossa equipe durante o atendimento pelo WhatsApp.",
   },
   {
     id: "periodo",

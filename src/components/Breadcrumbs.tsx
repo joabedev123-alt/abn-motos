@@ -14,11 +14,11 @@ type BreadcrumbsProps = {
 export function Breadcrumbs({ items, tone = "light" }: BreadcrumbsProps) {
   return (
     <nav aria-label="Trilha de navegação">
-      <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
+      <ol className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1 text-sm">
         {items.map((item, index) => {
           const current = index === items.length - 1;
           return (
-            <li key={`${item.label}-${index}`} className="flex items-center gap-2">
+            <li key={`${item.label}-${index}`} className="flex min-w-0 items-center gap-2">
               {index > 0 ? (
                 <span aria-hidden="true" className={tone === "dark" ? "text-white/35" : "text-muted"}>
                   /
@@ -35,7 +35,7 @@ export function Breadcrumbs({ items, tone = "light" }: BreadcrumbsProps) {
                   {item.label}
                 </Link>
               ) : (
-                <span aria-current={current ? "page" : undefined} className={tone === "dark" ? "text-white" : "text-ink"}>
+                <span aria-current={current ? "page" : undefined} className={cx("min-w-0 break-words", tone === "dark" ? "text-white" : "text-ink")}>
                   {item.label}
                 </span>
               )}

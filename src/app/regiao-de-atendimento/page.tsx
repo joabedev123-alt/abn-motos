@@ -3,7 +3,6 @@ import { Container } from "@/components/Container";
 import { CtaBand } from "@/components/CtaBand";
 import { Icon } from "@/components/Icon";
 import { PageHero } from "@/components/PageHero";
-import { company } from "@/data/company";
 import { createPageMetadata } from "@/lib/site";
 import { whatsappRegionUrl } from "@/lib/whatsapp";
 
@@ -31,16 +30,19 @@ export default function RegionPage() {
         <Container className="grid gap-4 md:grid-cols-2">
           <article className="rounded-[28px] bg-graphite p-8 text-white">
             <Icon name="geo-alt" className="text-2xl text-yellow" />
-            <h2 className="mt-5 font-display text-[1.85rem] font-semibold leading-none sm:text-4xl">Betim</h2>
+            <h2 className="mt-5 font-display text-[1.85rem] font-semibold leading-none sm:text-4xl">Atendimento em Betim</h2>
             <p className="mt-4 text-base leading-relaxed text-white/75">
-              Betim, em {company.state}, é a referência de atendimento da ABN MOTOS. Se você está na cidade, informe o bairro ao chamar a equipe.
+              Atendemos Betim e seus bairros, oferecendo opções de motocicletas para locação. Entre em contato com nossa equipe para consultar a disponibilidade e as condições de atendimento na sua região.
             </p>
           </article>
           <article className="rounded-[28px] border border-line bg-paper p-8">
             <Icon name="signpost-2" className="text-2xl" />
             <h2 className="mt-5 font-display text-[1.85rem] font-semibold leading-none sm:text-4xl">Cidades próximas</h2>
             <p className="mt-4 text-base leading-relaxed text-muted">
-              Localidades da região podem ser atendidas, mas o site não lista outras cidades. Envie o nome da cidade ou do bairro para a equipe confirmar.
+              Também recebemos consultas de clientes de cidades próximas a Betim. Informe sua cidade ou bairro pelo WhatsApp para que nossa equipe possa confirmar a possibilidade de atendimento.
+            </p>
+            <p className="mt-4 text-base font-semibold leading-relaxed text-ink">
+              ABN MOTOS – Locação de motocicletas com praticidade e atendimento direto.
             </p>
           </article>
         </Container>
@@ -49,26 +51,22 @@ export default function RegionPage() {
       <section className="bg-paper py-12 md:py-20">
         <Container className="grid gap-8 nav:grid-cols-[1.1fr_0.9fr] nav:items-center">
           <div>
-            <h2 className="font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">Como confirmar a sua localidade</h2>
+            <h2 className="font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">Consulte nossa área de atendimento</h2>
             <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
-              Na mensagem, diga a cidade e, se puder, o bairro. A ABN MOTOS responde se consegue atender aquele ponto para o período da locação.
+              A ABN MOTOS oferece locação de motocicletas para clientes de Betim e cidades próximas, em Minas Gerais.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
-              Não há mapa, endereço comercial nem ponto de retirada publicado neste site.
+              A retirada da motocicleta é realizada em Betim, independentemente da cidade onde o cliente reside.
             </p>
             <Button href={whatsappRegionUrl} external icon="whatsapp" className="mt-8 w-full sm:w-auto">
               Confirmar minha cidade
             </Button>
           </div>
           <div className="rounded-[28px] border border-dashed border-line bg-canvas p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.08em] text-muted">Consulta</p>
-            <p className="mt-4 font-display text-3xl font-semibold leading-tight">
-              {company.region}
-              <span className="mt-2 block text-xl font-medium text-muted">{company.state}</span>
-            </p>
-            <p className="mt-6 text-sm leading-relaxed text-muted">
-              A mensagem pronta pergunta se a ABN MOTOS atende a sua cidade ou o seu bairro. Você pode completar o nome do lugar antes de enviar.
-            </p>
+            <p className="text-sm font-semibold uppercase tracking-[0.08em] text-muted">Área de atendimento</p>
+            <p className="mt-3 font-display text-3xl font-semibold leading-tight">Betim e cidades próximas – Minas Gerais</p>
+            <p className="mt-8 text-sm font-semibold uppercase tracking-[0.08em] text-muted">Local de retirada</p>
+            <p className="mt-3 font-display text-3xl font-semibold leading-tight">Betim – MG</p>
           </div>
         </Container>
       </section>

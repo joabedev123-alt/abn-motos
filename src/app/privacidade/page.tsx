@@ -15,8 +15,8 @@ export default function PrivacyPage() {
     <>
       <PageHero
         eyebrow="Privacidade"
-        title="Como este site usa as informações."
-        description="Um texto curto sobre o formulário de contato e os links para WhatsApp e Instagram."
+        title="Privacidade e uso das informações"
+        description="A ABN MOTOS respeita sua privacidade e busca manter transparência sobre como as informações são utilizadas durante a navegação neste site e no contato com nossa equipe."
         crumbs={[
           { href: "/", label: "Início" },
           { label: "Privacidade" },

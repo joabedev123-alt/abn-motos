@@ -15,6 +15,8 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return motorcycles.map((moto) => ({ slug: moto.slug }));
 }
@@ -49,9 +51,9 @@ export default async function MotorcyclePage({ params }: PageProps) {
               { label: moto.nome },
             ]}
           />
-          <div className="mt-8 grid items-start gap-10 nav:grid-cols-[1.05fr_0.95fr]">
+          <div className="mt-8 grid min-w-0 items-start gap-8 md:gap-10 nav:grid-cols-[1.05fr_0.95fr]">
             <MotorcycleGallery images={moto.imagens} name={moto.nome} />
-            <div>
+            <div className="min-w-0">
               <p className="eyebrow">Consulta de locação</p>
               <h1 className="mt-4 font-display text-[2rem] font-semibold leading-[1.02] sm:text-4xl md:text-6xl">{moto.nome}</h1>
               <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">{moto.descricao}</p>
@@ -63,7 +65,7 @@ export default async function MotorcyclePage({ params }: PageProps) {
                 </div>
                 <div>
                   <dt className="text-sm text-muted">Disponibilidade</dt>
-                  <dd className="mt-1 text-lg font-semibold text-ink">Consulte disponibilidade</dd>
+                  <dd className="mt-1 text-lg font-semibold text-ink">Disponibilidade sob consulta</dd>
                 </div>
                 {moto.especificacoes.map((spec) => (
                   <div key={spec.rotulo}>
@@ -100,7 +102,7 @@ export default async function MotorcyclePage({ params }: PageProps) {
               <li className="rounded-2xl bg-canvas p-4">A cidade ou o bairro em Betim e região.</li>
             </ul>
             <p className="mt-4 text-base leading-relaxed text-muted">
-              Requisitos e condições da locação são explicados pela equipe. Esta página não lista documentos nem regras que ainda não foram informadas.
+              Para realizar a locação, é obrigatório possuir CNH válida na categoria A. Os demais requisitos e condições são explicados pela equipe no WhatsApp.
             </p>
             <Link href="/como-alugar" className="mt-4 inline-flex min-h-12 items-center text-sm font-semibold underline-offset-4 hover:underline">
               Ver como funciona a consulta

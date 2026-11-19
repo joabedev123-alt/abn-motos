@@ -1,10 +1,11 @@
+import type { ReactNode } from "react";
 import { Breadcrumbs, type Crumb } from "@/components/Breadcrumbs";
 import { Container } from "@/components/Container";
 
 type PageHeroProps = {
   eyebrow: string;
   title: string;
-  description: string;
+  description: ReactNode;
   crumbs: Crumb[];
 };
 

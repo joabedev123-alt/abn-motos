@@ -21,8 +21,14 @@ export default function MotorcyclesPage() {
     <>
       <PageHero
         eyebrow="Catálogo"
-        title="As motos cadastradas para consulta."
-        description="Cada card corresponde a um veículo com fotos próprias. Valores aparecem quando estiverem definidos. A disponibilidade é confirmada com a equipe."
+        title="Conheça nossas motocicletas"
+        description={
+          <>
+            Confira as motocicletas disponíveis para locação. Cada veículo possui fotos individuais e
+            informações específicas para que você possa escolher a opção ideal.{" "}
+            <strong className="font-semibold text-white">Escolha sua moto e fale conosco!</strong>
+          </>
+        }
         crumbs={[
           { href: "/", label: "Início" },
           { label: "Nossas motos" },
@@ -32,7 +38,7 @@ export default function MotorcyclesPage() {
       <section className="py-12 md:py-20">
         <Container>
           <p className="max-w-3xl text-base leading-relaxed text-muted md:text-lg">
-            Os nomes identificam as motos pelas fotos recebidas. Modelo, ano e outras características permanecem com a equipe até serem confirmados para publicação.
+            Conheça cada motocicleta por meio de fotos e informações completas, como marca, modelo, ano e características técnicas. Tudo para que você escolha a moto ideal para sua necessidade.
           </p>
           <div className="mt-10">
             <FeaturedMotorcycle moto={destaque} titleAs="h2" />

@@ -29,8 +29,8 @@ export function createPageMetadata({
   const siteUrl = getSiteUrl();
   const fullTitle = absoluteTitle ? title : `${title} | ABN MOTOS`;
   const shareImage = image ?? {
-    src: "/images/motos/preta-2-1.jpg",
-    alt: "Motocicleta preta da ABN MOTOS vista de lado",
+    src: "/images/motos/titan-cinza-atualizada.jpeg",
+    alt: "Honda CG 160 Titan cinza da ABN MOTOS vista de lado",
     width: 1200,
     height: 1600,
   };

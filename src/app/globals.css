@@ -30,9 +30,11 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(4.5rem + env(safe-area-inset-top));
   overflow-x: clip;
+  text-size-adjust: 100%;
 }
 
 body {
+  min-width: 0;
   background: var(--canvas);
   color: var(--ink);
   font-family: var(--font-sans);
@@ -56,6 +58,13 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
+  overflow-wrap: anywhere;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
 }
 
 :focus-visible {

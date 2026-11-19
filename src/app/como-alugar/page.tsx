@@ -82,7 +82,7 @@ export default function HowToRentPage() {
         <Container className="max-w-3xl">
           <h2 className="font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl md:text-5xl">O que a equipe esclarece</h2>
           <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
-            Documentação, requisitos e condições da locação são explicados no atendimento. Este site não publica idade mínima, categoria de habilitação, caução ou prazo mínimo, porque essas regras ainda não foram informadas para publicação.
+            Para realizar a locação, é obrigatório possuir CNH válida na categoria A. Os demais documentos, requisitos e condições são informados pela equipe durante o atendimento pelo WhatsApp.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
             Mandar uma mensagem abre a conversa. Só depois da confirmação da equipe a locação segue para os próximos passos.

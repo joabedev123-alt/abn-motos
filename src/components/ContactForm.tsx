@@ -67,14 +67,14 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} noValidate className="rounded-3xl border border-line bg-paper p-4 shadow-[0_12px_32px_rgba(17,17,17,0.04)] sm:p-5 md:p-7">
+    <form onSubmit={onSubmit} noValidate className="min-w-0 rounded-3xl border border-line bg-paper p-4 shadow-[0_12px_32px_rgba(17,17,17,0.04)] sm:p-5 md:p-7">
       <h2 className="font-display text-3xl font-semibold leading-none">Prepare sua mensagem</h2>
       <p className="mt-3 text-sm leading-relaxed text-muted">
         Os campos montam o texto no seu navegador. Nada é enviado por este site.
       </p>
 
-      <div className="mt-6 grid gap-5">
-        <div>
+      <div className="mt-6 grid min-w-0 gap-5">
+        <div className="min-w-0">
           <label htmlFor="nome" className="text-sm font-semibold text-ink">
             Nome
           </label>
@@ -97,7 +97,7 @@ export function ContactForm() {
           ) : null}
         </div>
 
-        <div>
+        <div className="min-w-0">
           <label htmlFor="cidade" className="text-sm font-semibold text-ink">
             Cidade ou bairro
           </label>
@@ -120,7 +120,7 @@ export function ContactForm() {
           ) : null}
         </div>
 
-        <div>
+        <div className="min-w-0">
           <label htmlFor="moto" className="text-sm font-semibold text-ink">
             Moto de interesse <span className="font-normal text-muted">(opcional)</span>
           </label>
@@ -140,7 +140,7 @@ export function ContactForm() {
           </select>
         </div>
 
-        <div>
+        <div className="min-w-0">
           <label htmlFor="periodo" className="text-sm font-semibold text-ink">
             Período desejado <span className="font-normal text-muted">(opcional)</span>
           </label>
@@ -154,7 +154,7 @@ export function ContactForm() {
           />
         </div>
 
-        <div>
+        <div className="min-w-0">
           <label htmlFor="mensagem" className="text-sm font-semibold text-ink">
             Mensagem <span className="font-normal text-muted">(opcional)</span>
           </label>

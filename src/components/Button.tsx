@@ -35,14 +35,14 @@ type ButtonNativeProps = CommonProps & {
 };
 
 const baseClass =
-  "inline-flex min-h-12 touch-manipulation items-center justify-center gap-2 rounded-full px-4 text-center text-base font-semibold leading-tight transition-colors duration-200 sm:px-5";
+  "inline-flex min-h-12 max-w-full touch-manipulation items-center justify-center gap-2 rounded-full px-4 text-center text-base font-semibold leading-tight transition-colors duration-200 sm:px-5";
 
 export function Button(props: ButtonLinkProps | ButtonNativeProps) {
   const className = cx(baseClass, variants[props.variant ?? "primary"], props.className);
   const content = (
     <>
       {props.icon ? <Icon name={props.icon} className="text-lg" /> : null}
-      <span>{props.children}</span>
+      <span className="min-w-0 break-words">{props.children}</span>
     </>
   );
 

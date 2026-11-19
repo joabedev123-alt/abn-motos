@@ -6,7 +6,6 @@ import { Container } from "@/components/Container";
 import { CtaBand } from "@/components/CtaBand";
 import { Icon } from "@/components/Icon";
 import { FeaturedMotorcycle, MotorcycleCard } from "@/components/MotorcycleCard";
-import { company } from "@/data/company";
 import { homeFaq } from "@/data/faq";
 import { getFeaturedMotorcycle, motorcycles } from "@/data/motorcycles";
 import { rentalSteps } from "@/data/rental";
@@ -71,7 +70,7 @@ export default function HomePage() {
                 Conhecer as motos
               </Button>
             </div>
-            <ul className="mt-8 grid gap-3 sm:grid-cols-3">
+            <ul className="mt-8 grid gap-2 min-[480px]:grid-cols-2 md:grid-cols-3">
               {heroNotes.map((note) => (
                 <li key={note.label} className="flex min-h-11 items-center gap-2 text-base text-white/80">
                   <Icon name={note.icon} className="text-yellow" />
@@ -102,7 +101,7 @@ export default function HomePage() {
               Aluguel de motos com contato direto.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted md:text-lg">
-              A ABN MOTOS atende Betim e região com locação de motocicletas. Fale com nossa equipe para conhecer as opções e consultar as condições para o período que você precisa.
+              A ABN MOTOS oferece locação de motocicletas em Betim e cidades próximas, em Minas Gerais. Nosso objetivo é facilitar o acesso à locação, com diferentes modelos e atendimento direto pelo WhatsApp.
             </p>
           </div>
           <ul className="mt-10 grid gap-4 md:grid-cols-3">
@@ -177,21 +176,18 @@ export default function HomePage() {
               Aluguel de motos em Betim e região.
             </h2>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
-              Está em Betim ou em uma cidade próxima? Entre em contato e confirme o atendimento para sua localização.
+              A ABN MOTOS oferece locação de motocicletas em Betim e cidades próximas, em Minas Gerais. Nosso objetivo é facilitar o acesso à locação, com diferentes modelos e atendimento direto pelo WhatsApp.
             </p>
             <Button href={whatsappRegionUrl} external icon="whatsapp" className="mt-8 w-full sm:w-auto">
               Consultar minha região
             </Button>
           </div>
           <div className="rounded-[28px] border border-white/10 bg-white/5 p-5 sm:p-8">
-            <p className="font-display text-4xl font-semibold leading-none sm:text-5xl">Betim</p>
-            <p className="mt-3 text-lg text-white/80">e região — {company.state}</p>
-            <p className="mt-6 text-base leading-relaxed text-white/65">
-              Outras localidades próximas são confirmadas na conversa. O site não publica endereço nem ponto de retirada.
+            <p className="font-display text-[1.85rem] font-semibold leading-[1.02] sm:text-4xl">Betim e região</p>
+            <p className="mt-3 text-lg text-white/80">Minas Gerais</p>
+            <p className="mt-4 text-base leading-relaxed text-white/75">
+              Entre em contato com nossa equipe pelo WhatsApp, informe sua cidade e bairro e consulte as condições para realizar a locação. Nossa equipe terá prazer em orientar você!
             </p>
-            <Link href="/regiao-de-atendimento" className="mt-6 inline-flex min-h-12 items-center text-sm font-semibold text-yellow">
-              Entenda a região atendida
-            </Link>
           </div>
         </Container>
       </section>

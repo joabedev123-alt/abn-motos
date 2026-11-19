@@ -8,39 +8,42 @@ export const privacySections = [
     id: "finalidade",
     titulo: "Para que este site existe",
     paragrafos: [
-      "O site da ABN MOTOS apresenta a empresa, as motocicletas cadastradas e a região de atendimento, e facilita o contato pelo WhatsApp.",
-      "As páginas podem ser lidas sem preencher dados e sem criar uma conta.",
+      "O site da ABN MOTOS apresenta a empresa, suas motocicletas disponíveis para locação, informações sobre atendimento e formas de contato.",
+      "Você pode navegar pelas páginas e consultar nosso catálogo sem precisar criar uma conta ou preencher dados pessoais.",
     ],
   },
   {
     id: "formulario",
-    titulo: "O que acontece com o formulário",
+    titulo: "Informações enviadas pelo formulário",
     paragrafos: [
-      "O formulário da página de contato não envia as informações a um servidor da ABN MOTOS. Nome, cidade ou bairro, moto de interesse, período desejado e mensagem são usados apenas no seu navegador para montar o texto.",
-      "Ao continuar, você é direcionado ao WhatsApp para enviar essa mensagem. Se a janela não abrir, o próprio navegador segue para o WhatsApp.",
-      "O site não solicita CPF, documentos ou outros dados além dos campos exibidos no formulário.",
+      "O formulário de contato permite que você informe seu nome, cidade ou bairro, motocicleta de interesse, período desejado e outras informações necessárias para sua consulta.",
+      "Ao continuar, o site prepara uma mensagem com essas informações e direciona você ao WhatsApp para enviá-la à nossa equipe.",
+      "O preenchimento do formulário, por si só, não conclui uma reserva nem representa a contratação de uma locação.",
     ],
   },
   {
     id: "servicos",
-    titulo: "Serviços externos",
+    titulo: "WhatsApp e Instagram",
     paragrafos: [
-      "WhatsApp e Instagram são serviços externos. Quando você abre esses links, o atendimento passa a acontecer nesses aplicativos, conforme as condições de cada um deles.",
-      "O Instagram da empresa é instagram.com/abn_motos. O WhatsApp usado no site é o número (31) 97148-9658.",
+      "A ABN MOTOS disponibiliza links para facilitar o contato pelos canais oficiais da empresa.",
+      "WhatsApp: (31) 97148-9658",
+      "Instagram: @abn_motos",
+      "Ao acessar esses serviços, você passa a utilizar plataformas externas, sujeitas às respectivas políticas de privacidade e condições de uso.",
     ],
   },
   {
     id: "cookies",
-    titulo: "Cookies e rastreamento",
+    titulo: "Cookies e navegação",
     paragrafos: [
-      "Este site não utiliza banner de cookies nem ferramentas de rastreamento. Não há área de login.",
+      "Este site não utiliza ferramentas de rastreamento ou área de login, conforme sua configuração atual.",
     ],
   },
   {
     id: "contato",
-    titulo: "Fale com a ABN MOTOS",
+    titulo: "Entre em contato",
     paragrafos: [
-      "Se quiser tratar de alguma informação enviada no atendimento, chame a ABN MOTOS pelo WhatsApp (31) 97148-9658.",
+      "Se tiver dúvidas sobre privacidade ou sobre as informações utilizadas no atendimento, fale diretamente com nossa equipe pelo WhatsApp.",
+      "ABN MOTOS – Transparência e confiança em cada atendimento.",
     ],
   },
 ] as const;

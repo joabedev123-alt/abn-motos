@@ -16,7 +16,7 @@ export function MotorcycleGallery({ images, name }: MotorcycleGalleryProps) {
 
   return (
     <div>
-      <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-line bg-[#efefe8]">
+      <div className="relative aspect-[3/4] overflow-hidden rounded-3xl border border-line bg-[#efefe8] sm:aspect-[4/3]">
         <Image
           src={current.src}
           alt={current.alt}

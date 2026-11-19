@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { motorcycles } from "@/data/motorcycles";
 import { getSiteUrl } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl();
   if (!siteUrl) return [];
